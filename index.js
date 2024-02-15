@@ -15,7 +15,6 @@ async function searchImages() {
     const data = await response.json();
 
     const results = data.results;
-
     if (pageNumber === 1) {
         searchResults.innerHTML = "";
         totalPages = data.total_pages; // Set the total pages from the API response
